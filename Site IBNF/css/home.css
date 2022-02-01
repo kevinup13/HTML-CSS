@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --cor-fundo: rgb(34, 1, 37);
+    --cor-hover: rgb(130, 148, 187);
+    --cor-primaria: silver;
+}
+body {
+    margin: 0;
+    background-color: rgb(173, 231, 181);
+}
+#titulo {
+    background-color: rgb(34,139,34);
+    background: linear-gradient(rgb(99, 165, 99),rgb(3, 199, 3));
+    width:1200px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Readex Pro', sans-serif;
+    color: white;
+}
+#membros, a {
+    justify-content: right;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 0px;
+    font-family: 'Readex Pro', sans-serif;
+}
+.container{
+    background-color: var(--cor-fundo);
+    width:1200px;
+    height: 46px;
+    display: block;
+    justify-content:left;
+    /*flex-direction: row;*/
+    margin: auto;
+    margin-top: -15px;
+}
+.container ul li a{
+    text-decoration: none; 
+    color: var(--cor-primaria);
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 16px; 
+}
+.container ul li{
+    display:block;
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 2px;
+    transition: background .4s; 
+    line-height: 20px;
+    text-align: left;
+    float: left;
+    font-size: 16px;
+    position: relative;
+}
+.container ul li:hover{
+    background-color: var(--cor-hover);
+}
+/* ------------------Sub menu---------------------*/
+.container ul ul {
+    /*background-color: var(--cor-fundo);*/
+    width: 170px;
+    margin-top:2px;
+    margin-left: 0;
+    display: none;
+    left: -55px;
+    top: 40px;
+    position: absolute;
+}
+.container ul li:hover>ul{
+    display: block;
+}
+.container ul ul li a{
+    display: block;
+    width:110px;
+    line-height: 20px;
+    /*padding: 2px;*/
+    text-align: center;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    position: relative;
+}
+/*---------------------sub-menu-item-----------------*/
+.container ul ul ul{
+    display: none;
+    margin-left: 112px;
+    top: -4px;
+    position: absolute;    
+}
+.container ul ul ul li {
+    display: block;
+    margin-left: 35px;
+    position: relative;   
+}
+/* Change the link color to #111 (black) on hover */
+/*-----------------------------------------------------------*/
+#article {
+    background-color: beige;
+    background: linear-gradient(beige, yellow);
+    background: -moz-linear-gradient(beige, yellow);
+    background:-o-linear-gradient(beige, yellow);
+    height: 120px;
+    width: 1200px;
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px;
+    color:brown;
+    text-align: center;
+    font-size: 18px;
+    line-height: 0.8;
+}
+#noticias{
+    background-color:rgb(244, 245, 244);
+    height: 300px;
+    width: 1200px;
+    padding: 5px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+dl, dt dd {
+    background: black;
+    color:aliceblue;
+}
+/*-----------------------Rodapé----------------------*/
+footer{
+    background-color:var(--cor-fundo);
+    color:white;
+    width: 1200px;
+    height: 100px;
+    margin: auto;
+    padding: 10px; 
+}
+address {
+    font-style: normal;
+}
