@@ -3,111 +3,37 @@
     margin: 0;
     padding: 0;
 }
-.box-title {
-    display:flex;
-    flex-direction:column;
-    align-items: left;
-    justify-content:center;
-    /*background-color: #422d9e;*/
-    background:linear-gradient(to bottom right, #2b1881, rgb(182, 92, 190));
-    height: 200px;
-    padding: 20px;
+.header-container {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    height: 580px;
 }
-.title {
-    margin-left: 100px;
+
+.logo {
+    width: 150px;
+    margin-left: 140px;
+}
+.header-container h1{
     color:rgb(243, 232, 253);
     font-family:'Readex Pro', sans-serif;
     font-size: 80px;
-    padding: 10px;   
-}
-.sub-title{
-    margin-left: 100px;
-    color:rgb(243, 232, 253);
-    font-family:'Readex Pro', sans-serif;
-    font-size: 20px;
-    padding: 10px;
-}    
-.bar-nav {
-    display: flex;
-    justify-content:center;
-    background-color:black;
-    height: 25px;
-    align-items: center;
-    
-}
-.menu ul, li{
-    width: 600px;
-    display: flex;
-    flex-direction:row;
-    justify-content:center;
-    justify-content: space-around;
-}
-.menu ul, li a{
-    font-size: 12px;
-    font-family:'Readex Pro', sans-serif;
-    color:rgb(255, 254, 254);
-    text-decoration: none;
-    list-style: none;
-}
-.container-produtos{
-    background: radial-gradient(rgb(58, 28, 77), rgb(0, 0, 2));
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content:space-evenly;
-    
-}
-.produtos {
-    background: radial-gradient(rgb(91, 35, 126), rgb(11, 11, 49));
-}
-.container-box-banners {
-    height: 500px;
-    display: flex;
-    padding: 10px;
-    align-items: center;
-    justify-content: space-evenly;
-    
-}
-.banner-1,
-.banner-2,
-.banner-3{
-    background-color: rgb(47, 7, 139);
-    color:aliceblue;
     text-align: center;
-    width: 180px;
-    height: 180px;
+    margin-top: 80px;
 }
-img{
+.descricao {
     display: flex;
+    flex-direction: row;
     width: 100%;
-    height: 100%;
+    height: 450px;
 }
-.modelo-1{
-    width: 450px;
+.text {
+    width: 50%;
+    background-color:blueviolet;
 }
-footer{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-    justify-content:space-evenly;
-    height: 100px;
-    background-color:#000;
-    color:#fff;
+.box-hero {
+    width: 50%;
 }
-.f-1,.f-2{
-    display: flex;
-    flex-wrap: wrap;
-    height: 50px;
-}
-.copyright {
-    display: flex;
-    width: 100%;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    color: rgb(56, 56, 56);
-    font-family: sans-serif;
-    font-size: 14px;
+.hero img{
+    width: 50%;
 }
