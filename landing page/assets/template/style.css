@@ -7,11 +7,11 @@
     background: linear-gradient(to bottom right, rgb(68, 68, 68), rgb(0, 0, 0));
     display: flex;
     align-items: center;
-    height: 180px;
+    height: 122px;
 }
 
 .logo {
-    width: 150px;
+    width: 120px;
     margin-left: 140px;
 }
 .header-container h1{
