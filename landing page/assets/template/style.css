@@ -4,10 +4,10 @@
     padding: 0;
 }
 .header-container {
-    background-image: linear-gradient(to bottom right, rgb(68, 68, 68), rgb(0, 0, 0));
+    background: linear-gradient(to bottom right, rgb(68, 68, 68), rgb(0, 0, 0));
     display: flex;
-    flex-direction: column;
-    height: 590px;
+    align-items: center;
+    height: 180px;
 }
 
 .logo {
@@ -34,29 +34,50 @@
     
     width: 100%;
     height: 600px;
-    background-color:rgb(206, 206, 206)
+    background: linear-gradient(to bottom right, rgb(247, 255, 255), rgb(75, 75, 75));
 }
 .container {
     display: flex;
-    width: 1200px;
-    
+    width: 1200px;    
 }
 .box-text {
     height: auto;
     padding: 20px;
-    background-color:rgb(139, 129, 148, 0.6);
-    color: aliceblue;
-    text-align: center;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    text-align: left;
     width: 50%;
 }
 .box-text h2 {
-    font-size: 30px;
+    font-size: 70px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .box-text p {
-    font-size: 14;
+    font-size: 12;
     margin-top: 10px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.comprar {
+    display: flex;
+    margin-top: 30px;
+    align-content: flex-start;
+
+}
+.comprar button {
+    padding: 15px 50px;
+    margin-right: 25px;
+    
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+    /*font-family: 'Readex Pro', sans-serif;*/
+    border-radius: 25px;
+    border: none;
+    background-color: white;
+
+
 }
 .hero {
     height: 500px;
