@@ -66,18 +66,23 @@
     align-content: flex-start;
 
 }
-.comprar button {
+.comprar a{
+    text-decoration: none;
     padding: 15px 50px;
     margin-right: 25px;
-    
     font-size: 15px;
     font-family: 'Outfit', sans-serif;
     /*font-family: 'Readex Pro', sans-serif;*/
     border-radius: 25px;
     border: none;
     background-color: white;
-
-
+    color: black;
+}
+.comprar a:hover {
+    background-color: rgb(248, 131, 21);
+    color:rgb(247, 255, 255);
+    transition: background .4s;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.384);
 }
 .hero {
     height: 500px;
