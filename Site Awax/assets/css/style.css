@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: #000;
+    --text-color: #fff;
+    --font-text: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+body {
+    font-size: 13px;
+    font-family: var(--font-text);
+}
+header {
+    height: 100px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.header {
+    display: flex;
+    max-width: 1140px;
+    height:100px;
+    margin: auto;
+    align-items: center;
+}
+.logo {
+    width: 100px;
+}
+.logo img{
+    width: 100px;
+    height:auto;
+}
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu ul,
+.menu li {
+    list-style: none;
+}
+.menu ul {
+    display: flex;
+}
+.menu li a {
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border-bottom: 5px solid #000;
+}
+.menu li a:hover,
+.menu .active a {
+    border-bottom: 5px solid #B28756;
+    transition: .1s;
+    border-bottom: 5px solid #B28756;
+    color: #ccc;
+}
+
+/*---------------Banner------------*/
+.banner {
+    height: calc(100vh - 100px);
+    background-color: #333;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+}
+.banner .sliders {
+    min-width: 1000vw;
+    height: 100%;
+}
+.banner .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0,0,0, .8);
+}
+.banner .slidearea {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color:  var(--text-color);
+    flex-direction: column;
+}
+.banner h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+.banner h1 span {
+    color: #B28756;
+}
+.banner h2 {
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.banner a {
+    display: block;
+    background-color: #B28756;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.banner .sliders-pointers {
+    width: 100vw;
+    height: 20px;
+    position:absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #B28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: px;
+    cursor: pointer;
+}
+.banner .pointer.active {
+    background-color:#B28756;
+}
