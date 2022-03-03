@@ -12,6 +12,7 @@
 body {
     font-size: 13px;
     font-family: var(--font-text);
+    overflow-x: hidden;
 }
 header {
     height: 100px;
@@ -32,6 +33,7 @@ header {
     width: 100px;
     height:auto;
 }
+/*-----------Menu------------*/
 .menu {
     flex: 1;
     display: flex;
@@ -65,6 +67,18 @@ header {
 }
 
 /*---------------Banner------------*/
+.button {
+    display: inline-block;
+    background-color: #B28756;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
 .banner {
     height: calc(100vh - 100px);
     background-color: #333;
@@ -103,18 +117,6 @@ header {
     text-transform: uppercase;
     margin-top: 20px;
 }
-.banner a {
-    display: block;
-    background-color: #B28756;
-    text-transform: uppercase;
-    color: var(--text-color);
-    font-size: 12px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px 30px;
-    margin-top: 30px;
-    border-radius: 20px;
-}
 .banner .sliders-pointers {
     width: 100vw;
     height: 20px;
@@ -130,9 +132,73 @@ header {
     border: 2px solid #B28756;
     border-radius: 8px;
     margin-left: 5px;
-    margin-right: px;
+    margin-right: 5px;
     cursor: pointer;
 }
 .banner .pointer.active {
     background-color:#B28756;
+}
+
+/*---------------------*/
+
+.default {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.default .section-title,
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.default .section-title {
+    font-size: 20px;
+}
+.default .section-desc {
+    font-size: 12x;
+    color: #ccc;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.default .section-body {
+    margin: auto;
+    max-width: 1140px;
+}
+.default.light {
+    background-color: #f7f7f7;
+}
+.default.light .section-title,
+.default.light .section-body {
+    color:#000;
+}
+.default.dark {
+    background-color:#000;
+}
+.default.dark .section-title,
+.default.dark .section-body {
+    color:#fff;
+}
+
+/*
+CSS DE AREAS ESPECIFICAS
+*/
+
+.section-aboutus {
+    display: flex;
+}
+.section-aboutus--left {
+    flex: 1;
+}
+.section-aboutus--left p{
+    font-size: 14px;
+    line-height: 25px;
+}
+.section-aboutus--right {
+    width: 520px;
+    text-align: center;
+}
+.section-aboutus--right img {
+    width: 480px;
+    box-shadow: 3px 5px 8px #333;
+
 }
