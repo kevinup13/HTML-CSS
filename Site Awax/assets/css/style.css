@@ -201,7 +201,6 @@ CSS DE AREAS ESPECIFICAS
     width: 480px;
     box-shadow: 3px 5px 8px #333;
 }
-
 .section-services {
     display: flex;
 }
@@ -224,12 +223,10 @@ CSS DE AREAS ESPECIFICAS
     font-size: 13px;
     color: #999;
 }
-
 .section-projects {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 .section-projects--filters {
     border: 1px solid #CCC;
@@ -256,11 +253,9 @@ CSS DE AREAS ESPECIFICAS
 .section-projects--filters li.active {
     border-bottom: 3px solid #B28756;
 }
-
 .section-projects--filters li:first-child {
     border-left: 0px;
 }
-
 .section-projects--photos {
     width: 100vw;
     max-width: 1140px;
@@ -268,7 +263,6 @@ CSS DE AREAS ESPECIFICAS
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 .section-projects--photo {
     width: 280px;
@@ -292,12 +286,23 @@ CSS DE AREAS ESPECIFICAS
     justify-content: center;
     align-items: center;
     color: #fff;
+    cursor: pointer;
 }
 .section-projects--photoinfo h5 {
     font-size: 18px;
     font-weight: 600;
-
 }
 .section-projects--photoarea:hover .section-projects--photoinfo {
     display: flex;
+}
+.bg-team {
+    background-image:url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+.section-team-area {
+    background-color:rgba(0,0,0,.8);
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
