@@ -329,10 +329,10 @@ CSS DE AREAS ESPECIFICAS
     height: 100%;
     align-items: center;
     justify-content: center;
-    color:  var(--text-color);
+    color:  #000;
     flex-direction: column;
+    padding: 30px;
 }
-
 .section-team-area .sliders-pointers {
     margin-top: 30px;
     height: 20px;
@@ -351,4 +351,39 @@ CSS DE AREAS ESPECIFICAS
 }
 .section-team-area .pointer.active {
     background-color:#B28756;
+}
+.section-team--avatar {
+    width: 150px;
+    height: auto;
+}
+.section-team--name {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 30px;
+
+}
+.section-team--role {
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+
+}
+.section-team--social {
+    display: flex;
+    margin-top: 20px;
+
+}
+.section-team--social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 13px;
+    margin-right: 10px;
+}
+.section-team--social a:hover {
+    background-color: #B28756;
 }
