@@ -358,7 +358,7 @@ CSS DE AREAS ESPECIFICAS
 }
 .section-team--name {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 17px;
     margin-top: 30px;
 
@@ -386,4 +386,80 @@ CSS DE AREAS ESPECIFICAS
 }
 .section-team--social a:hover {
     background-color: #B28756;
+}
+/*--------Clients------------*/
+.default.light.client {
+    background-color: #EEE;
+}
+.section-client--avatar {
+    width: 100px;
+    height: auto;
+}
+.section-client--name {
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 25px;
+}
+.section-client--role {
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+}
+.section-client {
+    display: flex;
+    width: 880px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.client-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-client--quote {
+    margin-top: 25px;
+}
+.section-client p {
+    margin-top: 20px;
+    text-align: center;
+    line-height: 25px;
+}
+.section-client .sliders-pointers {
+    margin-top: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-client .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #B28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.section-client .pointer.active {
+    background-color:#B28756;
+}
+/*----------------------------*/
+.default.light.sponsor {
+    display: flex;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+.section-sponsor {
+    display: flex;  
+}
+.section-sponsor .sponsor-empresas{
+    background-color: red;
+    flex: 1;   
+}
+.sponsor-empresas img {
+    height:50px;
+    width: 80px;   
 }
