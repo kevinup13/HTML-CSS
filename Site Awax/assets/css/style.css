@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
 }
-
 :root {
     --bg-color: #000;
     --text-color: #fff;
@@ -65,7 +64,6 @@ header {
     border-bottom: 5px solid #B28756;
     color: #ccc;
 }
-
 /*---------------Banner------------*/
 .button {
     display: inline-block;
@@ -138,9 +136,7 @@ header {
 .banner .pointer.active {
     background-color:#B28756;
 }
-
 /*---------------------*/
-
 .default {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -178,11 +174,9 @@ header {
 .default.dark .section-body {
     color:#fff;
 }
-
 /*
 CSS DE AREAS ESPECIFICAS
 */
-
 .section-aboutus {
     display: flex;
 }
@@ -306,7 +300,6 @@ CSS DE AREAS ESPECIFICAS
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
 .section-team {
     overflow: hidden;
     max-width: 880px;
@@ -361,18 +354,15 @@ CSS DE AREAS ESPECIFICAS
     font-weight: bold;
     font-size: 17px;
     margin-top: 30px;
-
 }
 .section-team--role {
     font-size: 14px;
     color: #999;
     margin-top: 5px;
-
 }
 .section-team--social {
     display: flex;
     margin-top: 20px;
-
 }
 .section-team--social a {
     display: inline-flex;
