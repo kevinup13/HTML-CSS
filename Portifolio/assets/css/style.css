@@ -50,7 +50,6 @@ header .menu-line {
 }
 .container .info {
     color: white;
-
 }
 .container .info .profession {
     font-weight: bold;
@@ -62,7 +61,6 @@ header .menu-line {
     font-size: 80px;
     margin-top: 10px;
     margin-bottom: 30px;
-
 }
 .container .info .buttons a{
     display: inline-block;
