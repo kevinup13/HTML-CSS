@@ -1,105 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <!--Title é o titulo que aparece em cima para
     identificação da página-->
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <title>Igreja Batista de Nova Floresta</title>
-    <link rel="stylesheet" href="css/home.css"/>
+    <link rel="stylesheet" href="assets/css/home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="titulo">
-        <h1>IGREJA BATISTA DE NOVA FLORESTA</h1>
-    </div>
-
+    <header>
+        <div class="logo">
+            <img src="assets/img/logo IBNF.png" alt="Igreja bastista de nova floresta">
+        </div>
+        <div class="menu">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </header>
     <!----------------------------barra de menu--------------------------->
     <nav class="container">
-        <ul>
+        <ul class="container-itens">
             <li><a href="home.html">Home</a></li>
-
-            <li><a href="paginas/ministerios.html">Ministérios</a>
+            <li><a href="assets/pages/ministerios.html">Ministérios</a>
                 <ul>
-                    <li><a href="#">Educação Religiosa</a>
-                        <ul class="item">
-                            <li><a href="#">EBC</a>
-                            </li>
-                            <li><a href="#">DCC</a>
-                            </li>
-                        </ul>
-                        
-                    </li>
-
-                    <li><a href="#">Música</a>
-                        <ul>
-                            <li><a href="#">Grupo de Louvor</a>
-                            </li>
-                            <li><a href="#">Multimídia</a>
-                            </li>
-                            <li><a href="#">Sonoplastia</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li><a href="#">Evangelismo e Missões</a></li>
-
-                    <li><a href="#">Social Cristão</a></li>
-
-                    <li><a href="#">Administração Eclesiástica e Patrimonial</a></li>
-                    
+                    <li><a href="">Educação Religiosa</a></li>
+                    <li><a href="">Música</a></li>
+                    <li><a href="">Evangelismo e Missões</a></li>
+                    <li><a href="">Social Cristão</a></li>
+                    <li><a href="">Administração Eclesiástica e Patrimonial</a></li>
                 </ul>
             </li>
-
-            <li><a href="paginas/eventos.html">Eventos</a>
-            </li>
-
-            <li><a href="paginas/calendario.html">Calendários</a>
-            </li>
-
-            <li><a href="paginas/sobre.html">Sobre nós</a>
-            </li>                                    
-            
-            <li><a href="paginas/contatos.html">Contatos</a>
+            <li><a href="assets/pages/eventos.html">Eventos</a></li>
+            <li><a href="assets/pages/calendario.html">Calendários</a></li>
+            <li><a href="assets/pages/sobre.html">Sobre nós</a></li>
+            <li><a href="assets/pages/contatos.html">Contatos</a>
             </li>
         </ul>
-        
-        <div id="membros">
-            <label>
-                <a href="login.html">Área de Membros</a>
-            </label>
-            
+        <div class="area-membros">
+            <a href="assets/pages/login.html">Área de Membros</a>
         </div>
+    </nav><br />
 
-    </nav><br/>
+    <!------------------------------Banners----------------------------->
+    <section class="banner">
+        <div class="sliders" style="margin-left:-0vw;">
+            <div class="slide">
+                <div class="slidearea">
+                    <h1>Design is about<br /><span>Communication</span></h1>
+                    <h2>Call Us: +00 0 3452 5672</h2>
+                    <a href="#" class="button">Get in touth!</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slidearea">
+                    <h1>Design is about<br /><span>Information</span></h1>
+                    <h2>Call Us: +00 0 3452 5673</h2>
+                    <a href="#" class="button">Get in touth!</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slidearea">
+                    <h1>Design is about<br /><span>Suport</span></h1>
+                    <h2>Call Us: +00 0 3452 5674</h2>
+                    <a href="#" class="button">Get in touth!</a>
+                </div>
+            </div>
+        </div>
+        <div class="sliders-pointers">
+            <div class="pointer active"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+        </div>
+    </section>
 
-    <!-------------------------------Artigos------------------------------>
-    <div id="article">
-        <article>
-            <h2>Qual é a nossa missão na terra?</h2>
-            <p>"E disse-lhes: Ide por todo o mundo, pregai o evangelho a toda criatura." (Marcos 16:15)</p>
-        </article>
-    </div>
-    <!------------------------------Noticias----------------------------->
-    <div id="noticias">
-        <h2>Notícias</h2>
-        <details>
-            <summary>Batismo</summary>
-            <p>Batismo é a morte pro mundo, e uma nova vida em cristo</p>
-        </details>
-
-    </div>
-    
     <footer>
         Todos os direitos reservados...
         <address>
-            Site feito por Kevin lopes.<br/>
-            E-mail para contato: kevinup13@gmail.com<br/>
+            Site feito por Kevin lopes.<br />
+            E-mail para contato: kevinup13@gmail.com<br />
             Rua Ágata, 12 - Nova Floresta - Manaus/AM.
         </address>
     </footer>
 
 </body>
+
 </html>
