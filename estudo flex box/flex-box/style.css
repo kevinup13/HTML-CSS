@@ -1,0 +1,48 @@
+*  {
+    box-sizing: border-box;
+    margin: 0;
+}
+:root {
+    --bg-color:blueviolet;
+    --font-family: 'Righteous', cursive; 
+    --text-color: #fff ;
+}
+.flex-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;   
+}
+.flex-item {
+    background-color: var(--bg-color);
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    color: var(--text-color);
+    text-align: center;
+    margin: 5px;
+}
+.row {
+    flex-direction: row;
+}
+.row-reverse {
+    flex-direction: row-reverse;
+}
+.row-reverse li{
+    background-color: blue;
+}
+.column {
+    float: left;
+    flex-direction: column;
+}
+.column li{
+    background-color: orange;
+}
+.column-reverse {
+    float: right;
+    flex-direction: column-reverse;
+}
+.column-reverse li{
+    background-color: chartreuse;
+}
