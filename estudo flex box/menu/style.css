@@ -36,15 +36,19 @@
     width: 100%;
 }
 .banner-area{
+    display: flex;
     width: 1024px;
     height: 400px;
+    padding: 40px;
     background-image:url("lamp.jpg");
 
 }
-.texto {
+.texto{
     display: flex;
-    position: absolute;
     color: #fff;
+    align-self:flex-end;
+    text-transform: uppercase;
+    font-size: 30px;
 }
 
 
@@ -98,16 +102,25 @@
     display: flex;
     flex-wrap: wrap;
     width: 1024px;
-    height: 50px;
+    height: 100px;
     margin: auto;
     justify-content: space-evenly;
     align-items: center;
     background-color: rgb(113, 113, 113);
 }
-.footer .bloco {
+.footer .bloco{
     display: flex;
     justify-content: center;
     color: #fff;
-    width: 300px;
-    text-align: center;
+    text-align: left;
+    
+}
+.bloco li {
+    text-align: left;
+    list-style: none;
+}
+.bloco li:hover {
+    background-color: rgb(33, 189, 173);
+    text-align: left;
+    list-style: none;
 }
