@@ -44,6 +44,8 @@
     height: 400px;
     padding: 40px;
     background-image:url("lamp.jpg");
+    background-size: cover;
+    background-position: center;
 
 }
 .texto{
