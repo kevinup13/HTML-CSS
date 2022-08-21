@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,55 @@
     <title>Formulário</title>
     <link rel="stylesheet" href="assets/css/template.css">
 </head>
+
 <body>
-    <section class="login">
-        <div class="title">
-            <h1>Faça seu login</h1>
+    <section class="container">
+        <div class="container-opacity">
+
         </div>
-        <form action="login.html" method="post">
-            <div class="box-form">
-                <input class="campo" type="email" placeholder="Email" required="Email">
-                <input class="campo" type="password" placeholder="Senha" required="Senha">
+        <div class="area-container">
+            <div class="side-left">
+                <div class="logo">
+                    <img src="assets/img/logo.png" alt="logo" width="100px">
+                </div>
+                <div class="text-box">
+                    <h1>Bem Vindo!</h1>
+                    <span>
+                        It is a long established fact that a
+                        reader will be distracted by the
+                        readable content of a page when
+                        looking at its layout.
+                    </span>
+                </div>
             </div>
-            <button type="submit">FAZER LOGIN</button>            
-        </form>
-        
+            <div class="side-right">
+                <div class="title">
+                    <h1>Login</h1>
+                </div>
+                <div class="form">
+                    <form action="login.html" method="post">
+                        <div class="box-form">
+                            <input class="campo" type="email" placeholder="Email" required="Email">
+                            <input class="campo" type="password" placeholder="Senha" required="Senha">
+                        </div>
+                        <div class="checkbox">
+                            <label for="lembrar-senha">
+                                <input type="checkbox" name="checkbox" id="lembrar-senha">
+                                <span>Lembrar Senha.</span>
+                            </label>
+                            <a href="">Esqueci a senha.</a>
+                        </div>
+                        <div class="btn">
+                            <button type="submit">Entrar</button>
+                            <a href="">Cadastrar</a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
     </section>
-    
 </body>
+
 </html>
