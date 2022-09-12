@@ -1,100 +1,116 @@
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color: rgb(245, 245, 245);
 }
+
 header {
     display: flex;
-    justify-content:center;
-    height:120px;
+    justify-content: center;
+    height: 120px;
     background-color: rgb(15, 109, 15);
-    background: linear-gradient(rgb(38, 138, 38),rgb(3, 199, 3));    
+    background: linear-gradient(rgb(38, 138, 38), rgb(3, 199, 3));
 }
+
 .container {
     display: flex;
-    justify-content:space-between;  
-    width: 990px;  
-    
+    justify-content: space-between;
+    width: 990px;
+
 }
-.logo a{
+
+.logo a {
     display: flex;
-    justify-content:center;
-    background-color:rgb(236, 232, 232);
+    justify-content: center;
+    background-color: rgb(236, 232, 232);
 }
+
 img {
-    width:210px;
+    width: 210px;
     margin: 10px;
 }
+
 .menu {
     display: flex;
-    align-items:center;
+    align-items: center;
 }
+
 nav ul,
 nav li {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 nav ul {
     display: flex;
 }
+
 nav a {
     display: block;
-    padding:15px;
+    padding: 15px;
     text-decoration: none;
     text-transform: uppercase;
     /*color: #e0e0e0;*/
     color: white;
     font-family: arial;
 }
+
 nav .active a,
 nav a:hover {
     background-color: rgb(16, 139, 32);
     /*color:aliceblue;*/
-    color:rgb(238, 255, 2)
+    color: rgb(238, 255, 2)
 }
+
 #banner {
     display: flex;
-    justify-content:center;
-    background-image:url('../images/floresta.jpg');
+    justify-content: center;
+    background-image: url('../images/floresta.jpg');
     background-position: center;
     background-size: cover;
     height: 670px;
-    width:100%
+    width: 100%
 }
+
 .column {
     flex-direction: column;
 }
+
 .banner_headline {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
 }
+
 .banner_headline h1 {
     color: #fff;
     font-size: 60px;
     text-shadow: 0px 2px 3px #2e2e2e;
-    margin:0;
+    margin: 0;
     padding: 0;
     max-width: 350px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 .banner_headline h2 {
     color: #fff;
     font-size: 20px;
-    margin:0;
+    margin: 0;
     margin-top: 20px;
     padding: 0;
     max-width: 350px;
     text-shadow: 0px 2px 3px #2e2e2e;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 .banner_options {
-    height:210px;
+    height: 210px;
     display: flex;
 }
+
 .banner1,
 .banner2,
 .banner3 {
@@ -102,151 +118,187 @@ nav a:hover {
     padding: 20px;
     color: #fff;
 }
+
 .banner1 {
-    background-color:#019c10;
+    background-color: #019c10;
 }
+
 .banner2 {
-    background-color:#017908;  
+    background-color: #017908;
 }
+
 .banner3 {
-    background-color:#005500; 
+    background-color: #005500;
 }
+
 .banner_title {
-    font-size: 22px;   
+    font-size: 22px;
 }
+
 .banner_desc {
     font-size: 14px;
     margin-top: 20px;
     margin-bottom: 20px;
     height: 70px;
 }
+
 .banner_options a {
     display: inline-block;
     border: 2px solid #fff;
     border-radius: 3px;
-    padding:9px 12px;
+    padding: 9px 12px;
     color: #fff;
     text-decoration: none;
-    font-size: 15px;  
+    font-size: 15px;
 }
-.banner_options a:hover{
-    background-color:rgb(255, 82, 20);
+
+.banner_options a:hover {
+    background-color: rgb(255, 82, 20);
     box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 20%);
 }
 
 #geral {
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
+
 #geral section {
     flex: 2;
 }
+
 #geral aside {
     flex: 1;
 }
+
 .widget_title {
-    margin-top:30px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
+
 .widget_title_text {
-    color:rgb(5, 5, 5);
+    color: rgb(5, 5, 5);
     font-size: 21px;
     font-weight: bold;
 }
+
 .widget_title_bar {
     width: 60px;
     height: 3px;
     background-color: rgb(15, 109, 15);
     margin-top: 10px;
 }
-.widget_body{
-    font-size:15px;
+
+.widget_body {
+    font-size: 15px;
 }
+
 .flex {
     display: flex;
     flex-wrap: wrap;
 }
+
 article {
-    flex:1;
+    flex: 1;
     min-width: 300px;
     margin-right: 20px;
 }
+
 article a {
     text-decoration: none;
 }
-article .news_data{
+
+article .news_data {
     display: flex;
 }
+
 article .news_posted_at {
     background-color: #06740b;
-    color:#fff;
+    color: #fff;
     font-size: 12px;
     padding: 10px;
-    margin-right:3px;
+    margin-right: 3px;
 }
+
 article .news_comments {
     background-color: #596d5a;
-    color:#fff;
+    color: #fff;
     font-size: 12px;
-    padding: 10px;   
+    padding: 10px;
 }
+
 article .news_thumbnail {
     margin-top: 20px;
 }
+
 article .news_thumbnail img {
     width: 100%;
     height: auto;
     margin-left: 0;
 }
+
 article .news_title {
-    margin-top:25px;
+    margin-top: 25px;
     margin-bottom: 25px;
     font-size: 23px;
     color: rgb(46, 46, 46);
 }
+
 article .news_resume {
     color: #000;
     font-size: 16px;
     line-height: 20px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
+
 footer {
     background-color: #1e1e1e;
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
+
 .footer_menu {
     display: flex;
-    
+
 }
-.fm_1, .fm_2, .fm_3 {
-    flex: 1;
-    color:#fff;
-    padding:20px;
-}
-.fm_1 {
-    background-color:#019c10;
-}
-.fm_2 {
-    background-color:#017908;  
-}
+
+.fm_1,
+.fm_2,
 .fm_3 {
-    background-color:#005500; 
+    flex: 1;
+    color: #fff;
+    padding: 20px;
 }
+
+.fm_1 {
+    background-color: #019c10;
+}
+
+.fm_2 {
+    background-color: #017908;
+}
+
+.fm_3 {
+    background-color: #005500;
+}
+
 .footer_area {
     display: flex;
-    color:#fff;    
+    color: #fff;
 }
+
 .footer_areaitem {
     flex: 1;
     color: #fff;
 }
+
 .flexColumn {
     flex-direction: column;
 }
+
 footer .widget_title_text {
-    color:#fff;
+    color: #fff;
 }
+
 .footer_copy {
     border-top: 1px solid #2c2c2c;
     height: 40px;
@@ -255,16 +307,18 @@ footer .widget_title_text {
     font-size: 12px;
     margin-top: 20px;
 }
+
 .menuMobile {
     display: none;
-    width:40px;
+    width: 40px;
     height: 40px;
     margin-top: 40px;
     margin-bottom: 40px;
     margin-right: 20px;
 }
+
 .mm_line {
-    height:3px;
+    height: 3px;
     background-color: rgb(255, 255, 255);
 }
 
@@ -273,59 +327,73 @@ footer .widget_title_text {
     .banner_headline {
         padding: 20px;
     }
+
     .banner_headline h1 {
         font-size: 55px;
     }
+
     .banner_headline h2 {
         font-size: 17px;
     }
-    .logo{
+
+    .logo {
         margin-left: 20px;
         padding: 10px;
         display: flex;
-        justify-content:center;
-        background-color:rgb(236, 232, 232);
+        justify-content: center;
+        background-color: rgb(236, 232, 232);
     }
+
     img {
-        width:180px;
+        width: 180px;
         margin: auto;
     }
+
     .banner_options {
-        height:auto;
+        height: auto;
         flex-direction: column;
     }
+
     .container {
         flex-direction: column;
     }
+
     #geral section,
     #gral aside {
-        padding: 20px;
+        padding: 10px;
     }
+
     .footer_menu {
         flex-direction: column;
     }
+
     .footer_area {
         flex-direction: column;
-        padding: 20px;
+        padding: 10px;
     }
+
     .footer_copy {
         padding-left: 20px;
     }
+
     header .container {
         flex-direction: row;
     }
+
     nav ul {
         flex-direction: column;
-        display:none;
+        display: none;
         left: 0;
-        width:100%;
-        background-color:#06740b;
+        width: 100%;
+        background-color: #06740b;
     }
+
     header {
-        height:auto;
+        height: auto;
     }
+
     .menuMobile {
-        display:flex;
+        display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
