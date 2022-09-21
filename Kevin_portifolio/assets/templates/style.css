@@ -1,20 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: 'Montserrat', arial, helvetica, sans-serif;
+    font-size: 13px;
+    background-color: rgb(34, 34, 34)
+}
+
 header {
-    height: 100px;
+    height: 80px;
     background-color: rgb(23, 23, 23);
     color: #fff;
 }
 
 .header {
     max-width: 1140px;
-    height: 100px;
+    height: 80px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -24,10 +28,9 @@ header {
     width: 80px;
 }
 
-.logoimg {
+.logo img {
     width: 80px;
     height: 80px;
-    background-color: brown;
 }
 
 .menu {
@@ -43,6 +46,7 @@ header {
 
 .menu ul {
     display: flex;
+
 }
 
 .menu li a {
@@ -51,6 +55,34 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: .3s;
+}
+
+.menu li a:hover {
+    color: rgb(45, 227, 0);
+}
+
+.menu .active a {
+    color: rgb(45, 227, 0);
+}
+
+/*-----------banner--------------*/
+.banner {
+    height: calc(100vh - 80px);
+    background-color: rgb(35, 35, 35);
+    overflow: hidden;
+}
+
+.banner .sliders {
+    width: 1000vw;
+    height: 100%;
+    background-color: rgb(62, 17, 17);
+}
+
+.banner .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
 }
