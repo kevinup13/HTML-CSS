@@ -14,12 +14,11 @@
     --font-padrao: 'Montserrat', arial, helvetica, sans-serif;
     --color-primary: rgb(241, 241, 241);
     --color-secundary: rgb(50, 237, 4);
+    --color-tertiary: rgb(1, 0, 30);
     --bg-button-primary: rgb(50, 237, 4);
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     font-family: var(--font-padrao);
     font-size: 13px;
     background: linear-gradient(72deg, rgb(1, 0, 30) 1%, rgb(4, 1, 39) 99%);
@@ -27,6 +26,7 @@ body {
 }
 
 header {
+    display: flex;
     width: 100%;
     height: 80px;
     background-color: rgb(1, 0, 20);
@@ -34,7 +34,7 @@ header {
 }
 
 .header {
-    max-width: 1140px;
+    width: 1140px;
     height: 80px;
     margin: auto;
     display: flex;
@@ -92,7 +92,6 @@ header {
     color: var(--color-secundary);
 }
 
-
 /*-----------container - slides--------------*/
 .container {
     background-image: url(/assets/images/bg.jpg);
@@ -101,11 +100,10 @@ header {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 80px);
     overflow: hidden;
     position: relative;
-
 }
 
 .slides {
@@ -152,7 +150,6 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-
 }
 
 .slide-area .link-sites a {
@@ -216,4 +213,85 @@ input {
     margin-left: -200vw;
 }
 
-/*----------hover nav-----------*/
+/*----------about me-----------*/
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 680px;
+    background-color: rgb(200, 205, 218);
+
+}
+
+.about h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: var(--color-tertiary);
+}
+
+.about .line-bar {
+    background: var(--color-secundary);
+    width: 160px;
+    height: 5px;
+    margin-bottom: 20px;
+}
+
+/*----------project-----------*/
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-primary);
+}
+
+.projects h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: var(--color-primary);
+}
+
+.projects .line-bar {
+    background: var(--color-secundary);
+    width: 160px;
+    height: 5px;
+    margin-bottom: 20px;
+}
+
+/*----------contact-----------*/
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 680px;
+    background-color: rgb(200, 205, 218);
+
+}
+
+.contact h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: var(--color-tertiary);
+}
+
+.contact .line-bar {
+    background: var(--color-secundary);
+    width: 160px;
+    height: 5px;
+    margin-bottom: 20px;
+}
+
+/*-------------------footer---------------*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+}
