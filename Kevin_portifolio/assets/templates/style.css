@@ -80,6 +80,10 @@ header {
 .banner {
     height: calc(100vh - 80px);
     background: rgb(2, 0, 36);
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
 }
 
@@ -92,6 +96,7 @@ header {
     display: block;
     width: 100vw;
     height: 100%;
+    background-color: rgba(2, 0, 36, 0.8);
 }
 
 .banner .slidearea {
@@ -146,6 +151,6 @@ header {
 .banner .link-sites a:hover {
     background-color: rgb(50, 237, 4);
     border: 2px solid rgb(50, 237, 4);
-    color: #fff;
+    color: rgb(2, 0, 36);
 
 }
