@@ -7,13 +7,13 @@
 body {
     font-family: 'Montserrat', arial, helvetica, sans-serif;
     font-size: 13px;
-    background-color: rgb(56, 56, 56);
+    background-color: rgb(2, 0, 28);
     color: #fff;
 }
 
 header {
     height: 80px;
-    background-color: rgb(47, 47, 47);
+    background-color: rgb(1, 0, 20);
     color: #fff;
 }
 
@@ -63,7 +63,7 @@ header {
     margin-right: 5px;
     transition: .3s;
     height: 80px;
-    border: 5px solid rgb(47, 47, 47);
+    border: 5px solid rgb(1, 0, 20);
 }
 
 .menu li a:hover {
@@ -77,3 +77,75 @@ header {
 }
 
 /*-----------banner--------------*/
+.banner {
+    height: calc(100vh - 80px);
+    background: rgb(2, 0, 36);
+    overflow: hidden;
+}
+
+.banner .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+
+.banner .slide {
+    display: block;
+    width: 100vw;
+    height: 100%;
+}
+
+.banner .slidearea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.banner h1 span {
+    color: rgb(50, 237, 4);
+}
+
+.banner h2 {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.banner .link-sites {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.banner .link-sites a {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(50, 237, 4);
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid rgb(50, 237, 4);
+    color: #fff;
+    background-color: rgb(2, 0, 36);
+    border-radius: 25px;
+    transition: .3s;
+}
+
+.banner .link-sites a:hover {
+    background-color: rgb(50, 237, 4);
+    border: 2px solid rgb(50, 237, 4);
+    color: #fff;
+
+}
