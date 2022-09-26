@@ -16,7 +16,6 @@ header {
     width: 1124px;
     height: 60px;
     background-color: rgb(30, 30, 30);
-    color: rgb(168, 44, 181);
     display: flex;
     align-items: center;
 }
@@ -26,30 +25,47 @@ header {
     align-items: center;
     height: 60px;
     padding: 10px;
+    color: rgb(168, 44, 181);
 }
 
 .menu {
-    display: flex;
     flex: 1;
-    justify-content: flex-end
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu ul,
+.menu li {
+    list-style: none;
 }
 
 .menu ul {
     display: flex;
+
 }
 
-.menu ul,
-li a {
+.menu li a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    list-style: none;
+    font-weight: bold;
     color: rgb(168, 44, 181);
-    padding: 10px 5px;
-    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    transition: .3s;
+    height: 60px;
+    border-bottom: 5px solid rgb(30, 30, 30);
 }
 
-.menu ul,
-li a:hover {
-    color: rgb(249, 249, 255);
+.menu li a:hover {
+    border-bottom: 5px solid rgb(168, 44, 181);
+    color: rgb(241, 241, 241);
+}
+
+.menu .active a {
+    border-bottom: 5px solid rgb(168, 44, 181);
+    color: #eee;
 }
 
 section {
@@ -118,7 +134,7 @@ section {
 
 .container a:hover {
     text-decoration: none;
-    background-color: chocolate;
+    background-color: rgb(86, 1, 66);
     color: rgb(249, 249, 255);
 }
 
