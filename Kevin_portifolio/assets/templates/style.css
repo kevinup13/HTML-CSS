@@ -231,12 +231,6 @@ input {
     color: var(--color-tertiary);
 }
 
-.about .line-bar {
-    background: var(--color-secundary);
-    width: 160px;
-    height: 5px;
-    margin-bottom: 20px;
-}
 
 /*----------project-----------*/
 .projects {
@@ -255,12 +249,7 @@ input {
     color: var(--color-primary);
 }
 
-.projects .line-bar {
-    background: var(--color-secundary);
-    width: 160px;
-    height: 5px;
-    margin-bottom: 20px;
-}
+
 
 /*----------contact-----------*/
 .contact {
@@ -280,12 +269,7 @@ input {
     color: var(--color-tertiary);
 }
 
-.contact .line-bar {
-    background: var(--color-secundary);
-    width: 160px;
-    height: 5px;
-    margin-bottom: 20px;
-}
+
 
 /*-------------------footer---------------*/
 footer {
