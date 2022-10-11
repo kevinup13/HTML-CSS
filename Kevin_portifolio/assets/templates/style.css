@@ -216,6 +216,7 @@ input {
 
 /*----------about me-----------*/
 .about,
+.tecnologias,
 .projects,
 .contact {
     display: flex;
@@ -227,6 +228,7 @@ input {
 }
 
 .about h2,
+.tecnologias h2,
 .projects h2,
 .contact h2 {
     font-size: 30px;

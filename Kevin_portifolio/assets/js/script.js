@@ -6,7 +6,7 @@ function subirTela() {
 };
 
 function btnScroll() {
-    if (window.scrollY === 0 || window.scrollY > 2175) {
+    if (window.scrollY === 0 || window.scrollY > 2860) {
         //ocutar o btn
         document.querySelector('.scrollbutton').style.display = 'none';
     } else {
