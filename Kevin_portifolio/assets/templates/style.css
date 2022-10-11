@@ -215,33 +215,20 @@ input {
 }
 
 /*----------about me-----------*/
-.about {
+.about,
+.projects,
+.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 680px;
-    background-color: rgb(200, 205, 218);
+    background-color: rgb(2, 0, 36);
 
 }
 
-.about h2 {
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    color: var(--color-tertiary);
-}
-
-/*----------project-----------*/
-.projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(72deg, rgb(1, 0, 30) 1%, rgb(4, 1, 39) 99%);
-}
-
-.projects h2 {
+.about h2,
+.projects h2,
+.contact h2 {
     font-size: 30px;
     font-weight: bold;
     margin-top: 20px;
@@ -249,25 +236,11 @@ input {
     color: var(--color-primary);
 }
 
+/*----------project-----------*/
 
 
-/*----------contact-----------*/
-.contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 680px;
-    background-color: rgb(200, 205, 218);
 
-}
 
-.contact h2 {
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    color: var(--color-tertiary);
-}
 
 /*-------------------button scroll---------------*/
 .scrollbutton {
@@ -308,6 +281,7 @@ input {
 
 /*-------------------footer---------------*/
 footer {
+    background-color: rgb(6, 6, 18);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -335,7 +309,7 @@ a {
     display: inline-block;
     padding: 10px 5px;
     color: var(--color-primary);
-    border: 5px solid rgb(2, 0, 36);
+    border: 5px solid rgb(6, 6, 18);
     transition: .3s;
 }
 
