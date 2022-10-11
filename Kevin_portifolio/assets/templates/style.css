@@ -224,7 +224,6 @@ input {
     align-items: center;
     height: 680px;
     background-color: rgb(2, 0, 36);
-
 }
 
 .about h2,
@@ -238,11 +237,29 @@ input {
     color: var(--color-primary);
 }
 
-/*----------project-----------*/
+/*----------area-sobre-----------*/
+.area-sobre {
+    display: flex;
+    justify-content: center;
+    width: 1124px;
+    height: 580px;
+}
 
+.left-side,
+.right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+    height: 100%;
+}
 
-
-
+.right-side img {
+    width: auto;
+    height: 100%;
+    padding: 20px;
+}
 
 /*-------------------button scroll---------------*/
 .scrollbutton {
