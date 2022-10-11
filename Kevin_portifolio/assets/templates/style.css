@@ -10,7 +10,7 @@
     --bg-primary: rgb(1, 0, 20);
     --bg-body: rgb(1, 0, 30);
     --bg-secundary: rgb(241, 241, 241);
-    --bg-opacity: rgba(2, 0, 36, 0.8);
+    --bg-opacity: rgba(2, 0, 36, 0.6);
     --font-padrao: 'Montserrat', arial, helvetica, sans-serif;
     --color-primary: rgb(241, 241, 241);
     --color-secundary: rgb(50, 237, 4);
@@ -21,7 +21,7 @@
 body {
     font-family: var(--font-padrao);
     font-size: 13px;
-    background: linear-gradient(72deg, rgb(1, 0, 30) 1%, rgb(4, 1, 39) 99%);
+    background-color: rgb(2, 0, 36);
     color: rgb(241, 241, 241);
 }
 
@@ -29,7 +29,7 @@ header {
     display: flex;
     width: 100%;
     height: 80px;
-    background-color: rgb(1, 0, 20);
+    background-color: rgb(4, 1, 39);
     color: rgb(241, 241, 241);
 }
 
@@ -79,7 +79,7 @@ header {
     margin-right: 5px;
     transition: .3s;
     height: 80px;
-    border: 5px solid rgb(1, 0, 20);
+    border: 5px solid rgb(4, 1, 39);
 }
 
 .menu li a:hover {
@@ -232,14 +232,13 @@ input {
     color: var(--color-tertiary);
 }
 
-
 /*----------project-----------*/
 .projects {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    background-color: var(--bg-primary);
+    background: linear-gradient(72deg, rgb(1, 0, 30) 1%, rgb(4, 1, 39) 99%);
 }
 
 .projects h2 {
@@ -329,18 +328,20 @@ a {
 }
 
 .menu-footer {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .menu-footer ul li a {
     display: inline-block;
     padding: 10px 5px;
     color: var(--color-primary);
+    border: 5px solid rgb(2, 0, 36);
     transition: .3s;
 }
 
 .menu-footer ul li a:hover {
     color: var(--color-secundary);
+    border-bottom: 5px solid rgb(50, 237, 4);
 }
 
 footer .copy {
