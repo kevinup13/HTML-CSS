@@ -197,6 +197,7 @@ header {
     background-color: var(--bg-button-primary);
 }
 
+/*----------bar pointer navigation - animation -----------*/
 input {
     display: none;
 }
@@ -269,13 +270,80 @@ input {
     color: var(--color-tertiary);
 }
 
+/*-------------------button scroll---------------*/
+.scrollbutton {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    cursor: pointer;
+    display: none;
+    transition: 0.5s;
+    border: 2px solid rgb(50, 237, 4);
+    color: rgb(50, 237, 4);
+    font-weight: bold;
+    background-color: var(--bg-opacity);
+    border-radius: 25px;
+    transition: .3s;
+}
+
+.scrollbutton span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60px;
+    height: 30px;
+    margin: auto;
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 14px;
+}
+
+.scrollbutton:hover {
+    background-color: rgb(50, 237, 4);
+    border: 2px solid rgb(50, 237, 4);
+    color: rgb(2, 0, 36);
+}
 
 
 /*-------------------footer---------------*/
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 200px;
+    align-items: center;
+    height: 150px;
+    padding-top: 20px;
+}
+
+footer .logo {
+    margin-bottom: 10px;
+}
+
+.menu-footer ul,
+li,
+a {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu-footer {
+    margin-bottom: 10px;
+}
+
+.menu-footer ul li a {
+    display: inline-block;
+    padding: 10px 5px;
+    color: var(--color-primary);
+    transition: .3s;
+}
+
+.menu-footer ul li a:hover {
+    color: var(--color-secundary);
+}
+
+footer .copy {
+    font-size: 12px;
+    color: rgb(157, 157, 157);
 }
