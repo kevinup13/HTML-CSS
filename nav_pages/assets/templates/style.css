@@ -99,6 +99,7 @@ section {
 
 .container .banner h1 {
     font-size: 50px;
+    text-transform: uppercase;
     margin-bottom: 10px;
 }
 
@@ -108,5 +109,6 @@ section {
 
 .container .banner h2 {
     font-size: 30px;
+    text-transform: uppercase;
     color: chocolate;
 }
