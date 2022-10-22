@@ -367,9 +367,11 @@ header {
 
 .area-tecnologias .right-side .box-img {
     display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 8px;
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
     width: 160px;
     height: auto;
     background-color: rgba(83, 57, 111, 0.478);
@@ -383,29 +385,87 @@ header {
     transition: transform .3s;
 }
 
+.box-img h3 {
+    display: block;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.box-img h3:hover {
+    transform: scale(1.2);
+}
+
 .box-img img:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 /*-------------------Area projetos---------------*/
-.area-projetos {
+.projects {
+    height: auto;
+}
+
+.section-projetos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 1124px;
-    height: 600px;
+    width: 100vw;
+    max-width: 1124px;
+    height: auto;
     margin-top: 20px;
-    padding: 20px;
 }
 
+.section-projeto {
+    width: 280px;
+}
+
+.section-projeto--area {
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.section-projeto--area img {
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+
+.section-projeto--info {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: inherit;
+}
+
+.section-projeto--info h5 {
+    font-size: 18px;
+}
+
+.section-projeto--area:hover .section-projeto--info {
+    display: flex;
+    border: 2px solid rgb(50, 237, 4);
+}
+
+/* 
 .box-projeto {
     background-color: rgba(83, 57, 111, 0.478);
     margin: 10px;
     padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 300px;
-    height: auto;
+    align-items: center;
+    width: 260px;
+    height: 160;
     border-radius: 8px;
 }
 
@@ -424,7 +484,7 @@ header {
 
     transform: scale(1.2);
 }
-
+ */
 /*-------------------Area contatos---------------*/
 .contact {
     height: 550px;
