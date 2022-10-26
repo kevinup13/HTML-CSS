@@ -54,7 +54,7 @@ header {
     align-items: center;
     text-decoration: none;
     font-weight: bold;
-    color: rgb(168, 44, 181);
+    color: rgb(241, 241, 241);
     padding-left: 10px;
     padding-right: 10px;
 
@@ -63,14 +63,20 @@ header {
     border-bottom: 5px solid rgb(30, 30, 30);
 }
 
-.menu li a:hover {
-    border-bottom: 5px solid rgb(168, 44, 181);
-    color: rgb(241, 241, 241);
-}
-
+.menu li a:hover,
 .menu .active a {
     border-bottom: 5px solid rgb(168, 44, 181);
-    color: #eee;
+    color: rgb(168, 44, 181);
+}
+
+.icon-menu {
+    display: none;
+    align-items: center;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+
 }
 
 section {
@@ -81,6 +87,7 @@ section {
 
 .container {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     max-width: 1124px;
@@ -106,14 +113,14 @@ section {
     margin-bottom: 10px;
 }
 
-.container .imagem {
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container .imagem .area-imagem {
+    width: 180px;
+    height: auto;
 }
 
-.container .imagem img {
+.container .imagem .area-imagem img {
+    width: 100%;
+    height: auto;
     cursor: pointer;
     transition: 1s;
 }
@@ -165,71 +172,7 @@ section {
     width: 300px;
     height: 300px;
     margin: 20px;
-}
-
-.formulario {
-    width: 400px;
-    padding: 30px;
-    border: 1px solid #ccc;
-}
-
-.formulario p {
-    width: 100%;
-    font-size: 1.5em;
-}
-
-.field {
-    width: 100%;
-    margin: 15px 0;
-}
-
-.field label,
-.field span {
-    padding-left: 10px;
-    font-size: 1.1em;
-    display: block;
-    width: 100%;
-}
-
-.radiobox label {
-    width: auto;
-    display: inline-block;
-}
-
-input[type=text],
-input[type=email],
-textarea {
-    width: 100%;
-    padding-left: 10px;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 15px;
-    border: 1px solid #ccc;
-    outline: none;
-}
-
-input#nao {
-    margin-left: 30px;
-}
-
-textarea {
-    line-height: 20px;
-    padding: 10px;
-    height: 90px;
-    resize: none;
-}
-
-input[type=submit] {
-    display: block;
-    background-color: #ccc;
-    height: 35px;
-    border: none;
-    outline: 0;
-    cursor: pointer;
-    width: 100px;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 footer {
@@ -241,3 +184,94 @@ footer {
     background-color: black;
     color: #eee;
 }
+
+/*----------responsividade */
+@media screen and(max-width:1024px) {
+    .header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        background-color: black;
+        color: #eee;
+    }
+}
+
+@media screen and(max-width:768px) {
+    .header {
+        width: 50%;
+    }
+
+    .container {
+        max-width: 33.3%;
+    }
+
+    .container a {
+        background-color: rgb(168, 44, 181);
+        padding: 10px 5px;
+        width: 120px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        transition: .2s;
+    }
+
+    .container a:hover {
+        text-decoration: none;
+        background-color: rgb(86, 1, 66);
+        color: rgb(249, 249, 255);
+    }
+
+    .boxes-about {
+
+        background-color: rgb(90, 90, 90);
+    }
+
+    .boxes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        display: flex;
+        justify-content: center;
+        background-color: red;
+        color: white;
+        text-transform: uppercase;
+        padding: 10px;
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+        border-radius: 10px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        background-color: black;
+        color: #eee;
+    }
+}
+
+@media screen and(max-width:580px) {}
